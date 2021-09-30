@@ -2,12 +2,13 @@ import 'dart:io';
 import 'dart:convert';
 
 /// fixed version for predictable builds
-const version = "c785e23196";
+const githubReleaseTag = "v0.2.0-nullsafety.0";
+const version = "06c3c38";
 const name = "as2f";
 
 /// fat jar baked on jitpack
 const jarPath =
-    "https://www.jitpack.io/com/github/vishna/$name/cli/$version/cli-$version-all.jar";
+    "https://github.com/eyeem/as2f/releases/download/$githubReleaseTag/$name-$version.jar";
 
 const cacheDir = ".jarCache";
 const savePath = "$cacheDir/$name-$version.jar";

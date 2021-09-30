@@ -1,6 +1,7 @@
 name: as2f
 description: Android Strings To Flutter. Takes Android XML files with translations and creates i18n Dart classes out of them to be used inside Flutter projects.
-version: 0.1.5
-homepage: https://github.com/vishna/as2f
+version: 0.2.0
+homepage: https://github.com/eyeem/as2f
+
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
