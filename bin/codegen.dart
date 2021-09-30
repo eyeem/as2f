@@ -3,7 +3,7 @@ import 'dart:convert';
 
 /// fixed version for predictable builds
 const githubReleaseTag = "v0.2.0-nullsafety.0";
-const version = "06c3c38";
+const version = "1fb88dc";
 const name = "as2f";
 
 /// fat jar baked on jitpack
