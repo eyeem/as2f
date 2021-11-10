@@ -1,9 +1,9 @@
 import 'dart:async';
 
 // ignore: implementation_imports
-import 'package:intl/src/plural_rules.dart' as plural_rules;
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/src/plural_rules.dart' as plural_rules;
 
 // ignore_for_file: non_constant_identifier_names
 // ignore_for_file: camel_case_types
@@ -62,26 +62,22 @@ class GeneratedLocalizationsDelegate extends LocalizationsDelegate<S> {
   @override
   Future<S> load(Locale locale) {
     final String? lang = getLang(locale);
-    if (lang != null) {
-      switch (lang) {
+    
+    switch (lang) {
 @foreach{locale : locales}        case "@{locale.value}": return SynchronousFuture<S>(const @{'$'}@{locale.value}());@end{'\n'}
-        default:
-          // NO-OP.
-      }
+      default:
+        // NO-OP.
     }
     return SynchronousFuture<S>(const S());
   }
 
   @override
-  bool isSupported(Locale locale) =>
-    locale != null && supportedLocales.contains(locale);
+  bool isSupported(Locale locale) => supportedLocales.contains(locale);
 
   @override
   bool shouldReload(GeneratedLocalizationsDelegate old) => false;
 }
 
-String? getLang(Locale l) => l == null
-  ? null
-  : l.countryCode != null && l.countryCode!.isEmpty
-    ? l.languageCode
-    : l.toString();
+String getLang(Locale locale) => 
+    locale.countryCode!.isNotEmpty == true
+        ? locale.toString() : locale.languageCode;
