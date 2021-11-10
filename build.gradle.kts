@@ -6,7 +6,7 @@ plugins {
 allprojects {
 
     group = "dev.vishna.as2f"
-    version = "0.1.0-SNAPSHOT"
+    version = "4ccb8fa"
 
     repositories {
         mavenCentral()
