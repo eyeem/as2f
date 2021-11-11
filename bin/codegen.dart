@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:convert';
 
 /// fixed version for predictable builds
-const githubReleaseTag = "v0.2.0-nullsafety.1";
+const githubReleaseTag = "v0.2.0-nullsafety.2";
 const version = "4ccb8fa";
 const name = "as2f";
 
