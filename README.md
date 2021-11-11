@@ -1,5 +1,18 @@
 # AS2F - Android Strings To Flutter
 
+## Usage
+
+1. Make changes to the templates (`as2f/src/resources) and commit
+2. Bump version in pubspec.yaml and commit
+3. Update Git SHA (use previous commit) in `bin/codegen.dart` and `build.gradle.kts` and commit.
+4. Build the new jar
+	1. `./gradlew shadowJar`
+	2. The generated artifact can be found under `cli/build/libs`.
+5. Tag the version and push it.
+6. Create a new release on the Github project
+7. Append the Git SHA from step 3 to the jar's file name, e.g. `as2f-f09b976.jar`
+8. Upload the generated jar to it so it can be downloaded from there when running the Dart codegen command.
+
 ## Overview
 
 Kotlin based generator for converting android xml string resources into one i18n dart class that can be used in flutter projects.
