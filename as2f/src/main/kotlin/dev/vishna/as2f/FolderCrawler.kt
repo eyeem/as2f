@@ -22,7 +22,6 @@ data class StringFileInfo(
 private val langMappings = mapOf(
         "pt-rBR" to "pt_BR",
         "zh-rTW" to "zh_TW",
-        "id" to "in"
 )
 
 fun String.toLanguageCode() : String {
