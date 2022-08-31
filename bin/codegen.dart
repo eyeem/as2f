@@ -2,8 +2,8 @@ import 'dart:io';
 import 'dart:convert';
 
 /// fixed version for predictable builds
-const githubReleaseTag = "v0.2.0-nullsafety.2";
-const version = "a3460ce";
+const githubReleaseTag = "v0.2.0-nullsafety.3";
+const version = "ea0a4f6";
 const name = "as2f";
 
 /// fat jar baked on jitpack
